@@ -15,6 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="https://kit.fontawesome.com/d5a16a8ece.js" crossorigin="anonymous"></script>
 
 </head>
@@ -36,49 +37,186 @@
     <!-- PROJECTS SCREEN -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">Projects</h1>
+            <h1 class="subtitle">Projects</h1>
 
-            <div class="work-list">
-                <div class="work">
-                    <img src="../images/online-grocery-store.jpg" alt="">
-                    <div class="layer">
-                        <h3>Online Grocery Store</h3>
-                        <p>Developed a fully functional online grocery store where customers can browse products, add
-                            them to a
-                            cart, and place orders seamlessly. Implemented features like real-time product search,
-                            category filters,
-                            and an integrated payment gateway for a user-friendly shopping experience.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <div class="project-info" id="online-grocery">
+                <div class="row">
+                    <div class="project-slider">
+                        <div class="slider-images">
+                            <img src="../images/online-grocery-store.jpg" alt="Online Grocery Store Image">
+                            <img src="../images/online-grocery-store-2.png" alt="Online Grocery Store Web Application">
+                        </div>
+                        <button class="arrow left">&lt;</button>
+                        <button class="arrow right">&gt;</button>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="../images/chat-application.jpg" alt="">
-                    <div class="layer">
-                        <h3>Chat Application</h3>
-                        <p>Designed and deployed a real-time chat applimcation with private and group chat
-                            functionalities.
-                            Integrated features like user authentication, message encryption, and instant notifications
-                            to ensure
-                            secure and seamless communication.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="../images/smart-home-application.jpg" alt="">
-                    <div class="layer">
-                        <h3>IoT-Based Smart Home Automation</h3>
-                        <p>Developed an IoT-based smart home automation system to control and monitor home appliances
-                            remotely.
-                            Implemented scheduling, energy usage tracking, and voice command features to enhance
-                            convenience and
-                            energy efficiency.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="project-desc">
+                        <h1>Online Grocery Store</h3>
+                            <p>Developed a fully functional online grocery store where customers can browse products,
+                                add
+                                them to a
+                                cart, and place orders seamlessly. Implemented features like real-time product search,
+                                category filters,
+                                and an integrated payment gateway for a user-friendly shopping experience.
+                            </p>
+                            <br>
+                            <h2>Technologies</h2>
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3" title="CSS"></i>
+                            <i class="fa-brands fa-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-react" title="ReactJS"></i>
+                            <i class="devicon-php-plain" title="PHP"></i>
+                            <i class="devicon-mysql-plain" title="MySQL"></i>
+                            <i class="fa-brands fa-paypal" title="PayPal"></i>
+                            <i class="fa-brands fa-aws" title="AWS"></i>
                     </div>
                 </div>
             </div>
-            <a href="pages/projects.html" class="btn">See more</a>
+
+            <div class="project-info" id="chat-app">
+                <div class="row">
+                    <div class="project-slider">
+                        <div class="slider-images">
+                            <img src="../images/chat-application.jpg" alt="Chat Application">
+                            <img src="../images/chat-app.jpg" alt="Chat Application">
+                        </div>
+                        <button class="arrow left">&lt;</button>
+                        <button class="arrow right">&gt;</button>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Chat Application</h3>
+                            <p>Designed and deployed a real-time chat application with private and
+                                group chat
+                                functionalities. Integrated features like user authentication, message encryption, and
+                                instant notifications to ensure secure and seamless communication.
+                            </p>
+                            <br>
+                            <h2>Technologies</h2>
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3" title="CSS"></i>
+                            <i class="fa-brands fa-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-node-js" title="NodeJS"></i>
+                            <i class="devicon-socketio-original" title="SocketIO"></i>
+                            <i class="devicon-mongodb-plain" title="MongoDB"></i>
+                            <i class="devicon-firebase-plain" title="Firebase"></i>
+                            <i class="devicon-heroku-original" title="Heroku"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info" id="smart-home">
+                <div class="row">
+                    <div class="project-slider">
+                        <div class="slider-images">
+                            <img src="../images/smart-home-application.jpg" alt="IoT Based Smart Home Automation">
+                            <img src="../images/iot-smart-app.jpg" alt="IoT Based Smart Home Automation">
+                        </div>
+                        <button class="arrow left">&lt;</button>
+                        <button class="arrow right">&gt;</button>
+                    </div>
+                    <div class="project-desc">
+                        <h1>IoT Based Smart Home Automation</h3>
+                            <p>Developed an IoT-based smart home automation system to control and
+                                monitor home
+                                appliances remotely. Implemented scheduling, energy usage tracking, and voice command
+                                features to enhance convenience and energy efficiency.
+                            </p>
+                            <br>
+                            <h2>Technologies</h2>
+                            <i class="devicon-arduino-plain" title="Arduino"></i>
+                            <i class="devicon-raspberrypi-plain" title="Rasberry Pi"></i>
+                            <i class="devicon-rabbitmq-original" title="MQTT"></i>
+                            <i class="fa-brands fa-python" title="Python"></i>
+                            <i class="fa-brands fa-angular" title="AngularJS"></i>
+                            <i class="devicon-mysql-plain" title="MySQL"></i>
+                            <i class="devicon-googlecloud-plain" title="Google Cloud IT"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="row">
+                    <div class="project-slider">
+                        <div class="slider-images">
+                            <img src="../images/finance-tracker.jpg" alt="Personal Finance Tracker">
+                            <img src="../images/budget-planner.webp" alt="Personal Finance Tracker">
+                        </div>
+                        <button class="arrow left">&lt;</button>
+                        <button class="arrow right">&gt;</button>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Personal Finance Tracker</h3>
+                            <p>Designed a personal finance tracker to help users manage their finances effectively.
+                                Included features for tracking expenses, setting budgets, and generating category-wise
+                                reports with interactive graphs for better financial insights.
+                            </p>
+                            <br>
+                            <h2>Technologies</h2>
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3" title="CSS"></i>
+                            <i class="fa-brands fa-react" title="ReactJS"></i>
+                            <i class="fa-brands fa-node-js" title="NodeJS"></i>
+                            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                            <i class="devicon-d3js-plain" title="D3.js"></i>
+                            <i class="devicon-netlify-plain" title="Netlify"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="row">
+                    <div class="project-slider">
+                        <div class="slider-images">
+                            <img src="../images/employee-management-system.webp" alt="Employee Management System">
+                            <img src="../images/EMS-app.webp" alt="Employee Management System">
+                        </div>
+                        <button class="arrow left">&lt;</button>
+                        <button class="arrow right">&gt;</button>
+                    </div>
+                    <div class="project-desc">
+                        <h1>Employee Management System</h3>
+                            <p>Built an employee management system to streamline HR processes, including attendance
+                                tracking, payroll management, and performance evaluations. The system included admin and
+                                employee dashboards with features like leave requests, task assignments, and report
+                                generation.
+                            </p>
+                            <br>
+                            <h2>Technologies</h2>
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3" title="CSS"></i>
+                            <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+                            <i class="devicon-spring-original" title="Springboot"></i>
+                            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+                            <i class="devicon-oauth-plain" title="OAuth 2.0"></i>
+                            <i class="devicon-azure-plain" title="Azure"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="row">
+                    <div class="project-slider">
+                        <div class="slider-images">
+                            <img src="../images/resume-builder.jpg" alt="AI-Powered Resume Builder">
+                            <img src="../images/resume-build.webp" alt="AI-Powered Resume Builder">
+                        </div>
+                        <button class="arrow left">&lt;</button>
+                        <button class="arrow right">&gt;</button>
+                    </div>
+                    <div class="project-desc">
+                        <h1>AI-Powered Resume Builder</h3>
+                            <p>Created an AI-powered resume builder to help users design professional resumes.
+                                Leveraged machine learning to suggest skills, job descriptions, and formatting styles.
+                                Enabled PDF export and multi-template options for enhanced user flexibility.
+                            </p>
+                            <br>
+                            <h2>Technologies</h2>
+                            <i class="devicon-tailwindcss-original" title="Tailwind CSS"></i>
+                            <i class="fa-brands fa-python" title="Python"></i>
+                            <i class="devicon-mongodb-plain" title="MongoDB"></i>
+                            <i class="fa-brands fa-aws" title="AWS"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -86,6 +224,7 @@
         &copy; 2025 Dulanjana Liyanagama. All Rights Reserved.
     </div>
 
+    <script src="../js/projects.js"></script>
 </body>
 
 </html>

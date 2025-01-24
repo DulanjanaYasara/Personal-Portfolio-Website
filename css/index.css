@@ -119,7 +119,7 @@ nav ul li a.inactive-section:hover::after {
 }
 
 .subtitle {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     color: white;
 }
@@ -401,4 +401,91 @@ form .btn2:hover {
     100% {
         opacity: 0;
     }
+}
+
+/*-------------- PROJECTS PAGE --------------*/
+.project-info {
+    margin-top: 70px;
+}
+
+.project-slider {
+    flex-basis: 35%;
+}
+
+.project-desc {
+    flex-basis: 60%;
+}
+
+.project-slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slider-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/* .project-slider img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+} */
+
+.project-desc h1 {
+    margin-bottom: 20px;
+    color: #ff004f;
+}
+
+.project-desc h2 {
+    margin-bottom: 20px;
+}
+
+.project-desc i {
+    margin-right: 15px;
+    font-size: 40px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.project-desc i:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
 }
