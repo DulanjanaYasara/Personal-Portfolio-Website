@@ -23,9 +23,25 @@ form.addEventListener('submit', e => {
             }, 5000)
             form.reset();
         })
-        .catch(error =>{ 
+        .catch(error => {
             hideLoader();
             console.error('Error!', error.message);
             msg.innerHTML = "Something went wrong. Please try again!";
         })
+});
+
+document.querySelectorAll("#skills .skill").forEach(skill => {
+    const percentageElement = skill.querySelector(".skill-excellence h4");
+    const percentageValue = parseInt(percentageElement.textContent);
+
+    // Set the custom CSS property (--skill-width) on the skill element
+    skill.style.setProperty('--skill-width', `${percentageValue}%`);
+
+    // Add hover event to reset the animation
+    skill.addEventListener('mouseover', () => {
+        skill.style.setProperty('--skill-width', `0%`); 
+        setTimeout(() => {
+            skill.style.setProperty('--skill-width', `${percentageValue}%`); 
+        }, 400); 
+    });
 });

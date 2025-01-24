@@ -294,6 +294,129 @@ nav ul li a.inactive-section:hover::after {
 }
 
 /*-------------- RESUME PAGE --------------*/
+/* education section */
+#education {
+    padding: 30px 0;
+}
+
+.education-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.education-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.education-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.education-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+.education-list div h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.education-list div p {
+    font-size: 15px;
+}
+
+.education-list div img {
+    width: 100px;
+    margin: 10px 10px;
+}
+
+/* work experiences and skills section */
+#experiences {
+    flex-basis: 35%;
+    margin-top: 50px;
+}
+
+.experience {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.experience h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.experience h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.experience p {
+    font-size: 15px;
+}
+
+#skills {
+    flex-basis: 60%;
+    margin-top: 50px;
+}
+
+#skills .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #262626;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#skills .skill::after {
+    content: '';
+    width: var(--skill-width, 0%);
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    border-radius: 1px;
+    bottom: 0px;
+    transition: width 0.5s ease-in-out;
+}
+
+#skills .specific-skill {
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#skills .skill-excellence {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* contact section */
 .contact-left {
     flex-basis: 35%;
