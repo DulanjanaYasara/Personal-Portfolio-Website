@@ -677,4 +677,11 @@ nav .fas {
         line-height: 35px;
         border-radius: 50%;
     }
+
+    .layer p {
+
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+    }
 }
