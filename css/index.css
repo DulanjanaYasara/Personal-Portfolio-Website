@@ -679,9 +679,7 @@ nav .fas {
     }
 
     .layer p {
-        display: -webkit-box;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 2;
+        font-size: 12px;
     }
 
     nav ul li a.inactive-section::after {
@@ -690,5 +688,9 @@ nav .fas {
 
     nav ul li a.inactive-section:hover::after {
         width: 0%;
+    }
+
+    .download-cv-text {
+        font-size: 25;
     }
 }
