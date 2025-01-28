@@ -43,12 +43,14 @@
     <!-- HEADER SECTION -->
     <div class="container">
         <nav>
-            <img src="../images/logo.png" alt="" class="logo">
-            <ul>
+            <img src="../images/logo.png" alt="Dulanjana Logo" class="logo">
+            <ul id="sidemenu">
                 <li><a href="../index.html" class="inactive-section">Home</a></li>
                 <li><a href="projects.html" class="inactive-section">Projects</a></li>
                 <li><a href="#" class="active-section">Resume</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
     </div>
 
@@ -193,8 +195,9 @@
             &copy; 2025 Dulanjana Liyanagama. All Rights Reserved.
         </div>
     </div>
-    <script src="../js/resume.js"></script>
 
+    <script src="../js/index.js"></script>
+    <script src="../js/resume.js"></script>
 </body>
 
 </html>

@@ -25,12 +25,14 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img src="images/logo.png" alt="" class="logo">
-        <ul>
+        <img src="images/logo.png" alt="Dulanjana Logo" class="logo">
+        <ul id="sidemenu">
           <li><a href="#" class="active-section">Home</a></li>
           <li><a href="pages/projects.html" class="inactive-section">Projects</a></li>
           <li><a href="pages/resume.html" class="inactive-section">Resume</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
 
       <div class="header-text">
@@ -79,7 +81,7 @@
 
       <div class="work-list">
         <div class="work">
-          <img src="images/online-grocery-store.jpg" alt="">
+          <img src="images/online-grocery-store.jpg" alt="Online Grocery Store">
           <div class="layer">
             <h3>Online Grocery Store</h3>
             <p>Developed a fully functional online grocery store where customers can browse products, add them to a
@@ -90,7 +92,7 @@
           </div>
         </div>
         <div class="work">
-          <img src="images/chat-application.jpg" alt="">
+          <img src="images/chat-application.jpg" alt="Chat Application">
           <div class="layer">
             <h3>Chat Application</h3>
             <p>Designed and deployed a real-time chat application with private and group chat functionalities.
@@ -100,7 +102,7 @@
           </div>
         </div>
         <div class="work">
-          <img src="images/smart-home-application.jpg" alt="">
+          <img src="images/smart-home-application.jpg" alt="IoT-Based Smart Home Automation">
           <div class="layer">
             <h3>IoT-Based Smart Home Automation</h3>
             <p>Developed an IoT-based smart home automation system to control and monitor home appliances remotely.
@@ -128,6 +130,7 @@
     &copy; 2025 Dulanjana Liyanagama. All Rights Reserved.
   </div>
 
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
